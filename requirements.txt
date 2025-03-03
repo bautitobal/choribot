@@ -1,0 +1,11 @@
+# This file lists all the dependencies that your project requires in order to run.
+# You can install these dependencies by running 'pip install -r requirements.txt'.
+twitchio
+openai
+python-dotenv
+dotenv
+requests
+asyncio
+aiohttp
+datetime
+json

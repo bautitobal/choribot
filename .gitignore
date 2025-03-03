@@ -1,0 +1,43 @@
+# Variables del entorno
+.env
+
+todo.md
+
+# Backups
+backup/
+backups/
+
+# Dependencias
+node_modules/
+venv/
+env/
+
+
+# Construcción
+dist/
+build/
+out/
+
+
+# Logs
+logs/
+*.log
+
+
+# Otros
+.DS_Store
+Thumbs.db
+*.swp
+
+# Editor
+.vscode/
+.idea/
+
+# Cache
+__pycache__/
+commands/__pycache__/
+utils/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+```

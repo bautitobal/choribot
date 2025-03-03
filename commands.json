@@ -1,0 +1,155 @@
+{
+  "globales": [
+    {
+      "nombre": "!choribot",
+      "descripcion": "Hazle preguntas o escribele a Choribot y él te responderá! Uso: !choribot <prompt>",
+      "description": "Ask questions or talk to Choribot and he will respond! Usage: !choribot <prompt>"
+    },
+    {
+      "nombre": "!roll",
+      "descripcion": "Genera un número aleatorio entre 1 y 100. Uso: !roll",
+      "description": "Generates a random number between 1 and 100. Usage: !roll"
+    },
+    {
+      "nombre": "!memide",
+      "descripcion": "Muestra cuánto te mide Kappa Uso: !memide",
+      "description": "Shows how big is Kappa Usage: !memide"
+    },
+    {
+      "nombre": "!moto",
+      "descripcion": "Cuenta las motos guardadas en el Speedrun. Uso: !moto",
+      "description": "Counts the saved motorcycles on the run. Usage: !moto"
+    },
+    {
+      "nombre": "!choripan",
+      "descripcion": "Cuenta los choripanes compartidos. Uso: !choripan",
+      "description": "Counts the shared 'choripanes'. Usage: !choripan"
+    },
+    {
+      "nombre": "!peru",
+      "descripcion": "Adivinaré que tan Peruano eres. Uso: !peru",
+      "description": "I will guess how Peruvian you are. Usage: !peru"
+    },
+    {
+      "nombre": "!quote",
+      "descripcion": "Muestran citas textuales aleatorias creadas por usuarios del chat. Uso !quote <frase>. Usa !addquote <agrega tu frase aquí>",
+      "description": "Display random textual quotes created by chat users. Usage !quote <phrase>. Use !addquote <add your phrase here>."
+    },
+    {
+      "nombre": "!amor",
+      "descripcion": "Muestra cuánto amor hay entre dos personas (el autor y un usuario). Uso: !amor <usuario>",
+      "description": "Shows how much love is between two people (author and a user). Usage: !amor <user>"
+    },
+    {
+      "nombre": "!song",
+      "descripcion": "Muestra la canción que está sonando en el stream (o de algún usuario). Uso: !song o !song [user de lastfm]",
+      "description": "Shows the currently playing song on the stream (or from any user). Usage: !song or !song [lastfm username]"
+    },
+    {
+      "nombre": "!wr",
+      "descripcion": "Muestra el récord mundial de un juego. Uso: !wr <nombre del juego> [categoría] o !wr <nombre del juego> para ver la categoría principal",
+      "description": "Shows the world record for a game. Usage: !wr <game name> [category] or !wr <game name> to see the main category"
+    },
+    {
+      "nombre": "!pb",
+      "descripcion": "[BETA] Muestra los mejores tiempos personales de un usuario. Uso: !pb [usuario]",
+      "description": "[BETA] Shows the personal bests of a user. Usage: !pb [username]"
+    },
+    {
+      "nombre": "!echo",
+      "descripcion": "Repite un mensaje en el chat. Uso: !echo <mensaje>",
+      "description": "Repeats a message in the chat. Usage: !echo <message>"
+    },
+    {
+      "nombre": "!crab",
+      "descripcion": "Un juego para acumular cangrejos (con una chance del 50% de ganar uno más o perderlo todo!). Uso: !crab",
+      "description": "A game to accumulate crabs (with a 50% chance of winning one more or losing them all!). Usage: !crab"
+    },
+    {
+      "nombre": "!uptime",
+      "descripcion": "Muestra cuánto tiempo lleva el stream en vivo. Uso: !uptime",
+      "description": "Shows how long the stream has been live. Usage: !uptime"
+    },
+    {
+      "nombre": "!lurk",
+      "descripcion": "Indica que estás en modo lurker. Uso: !lurk",
+      "description": "Indicates that you are in lurker mode. Usage: !lurk"
+    },
+    {
+      "nombre": "!unlurk",
+      "descripcion": "Indica que ya no estás en modo lurker. Uso: !unlurk",
+      "description": "Indicates that you are no longer in lurker mode. Usage: !unlurk"
+    },
+    {
+      "nombre": "!7tv",
+      "descripcion": "Obten 7tv para interactuar con los emotes del canal! Uso: !7tv",
+      "description": "Get 7tv to interact with the channel's emotes! Usage: !7tv"
+    },
+    {
+      "nombre": "!choribot2",
+      "descripcion": "Segundo comando para hablar con Choribot11. Uso !choribot2 <prompt>",
+      "description": "Second command to talk to Choribot11. Usage !choribot2 <prompt>."
+    },
+    {
+      "nombre": "!choribot3",
+      "descripcion": "Tercer comando para hablar con Choribot11 (un poco más lento). Uso !choribot3 <prompt>",
+      "description": "Third command to talk to Choribot11 (a bit slower). Usage !choribot3 <prompt>."
+    },
+    {
+      "nombre": "!commands",
+      "descripcion": "Muestra la lista de comandos disponibles (en Inglés). Uso: !commands"
+    },
+    {
+      "nombre": "!paya",
+      "descripcion": "Comando para enviar un comentario random de elpayasitogamer. Uso: !paya",
+      "description": "Command to send a random comment from elpayasitogamer. Usage: !paya"
+    },
+    {
+      "nombre": "!specs",
+      "descripcion": "Muestra las especificaciones de la PC del streamer. Uso: !specs",
+      "description": "Shows streamer's PC specifications. Usage: !specs"
+    },
+    {
+      "nombre": "!hug",
+      "descripcion": "Envía un abrazo a alguien. Uso: !hug <usuario>",
+      "description": "Sends a hug to someone. Usage: !hug <user>"
+    },
+    {
+      "nombre": "!libra",
+      "descripcion": "Muestra informacion sobre $LIBRA.",
+      "description": "Shows information about $LIBRA."
+    },
+    {
+      "nombre": "!frase",
+      "descripcion": "Muestra una frase random. Uso: !frase",
+      "description": "Shows a random quote. Usage: !frase"
+    }
+  ],
+  "personales": [
+    {
+      "nombre": "!discord",
+      "descripcion": "Muestra el enlace al servidor de Discord. Uso: !discord",
+      "description": "Shows the link to the Discord server. Usage: !discord"
+    },
+    {
+      "nombre": "!socials",
+      "descripcion": "Muestra los enlaces a las redes sociales. Uso: !socials",
+      "description": "Shows the links to social media. Usage: !socials"
+    },
+    {
+      "nombre": "!pikuniku",
+      "descripcion": "Discord Oficial de Pikuniku Speedrun. Uso: !pikuniku",
+      "description": "Official Pikuniku Speedrun Discord. Usage: !pikuniku"
+    },
+    {
+      "nombre": "!shar",
+      "descripcion": "Muestra información sobre el juego SHAR. Uso: !shar",
+      "description": "Shows information about the game SHAR. Usage: !shar"
+    },
+    {
+      "nombre": "!winner",
+      "descripcion": "Anuncia al ganador de un sorteo. Uso: !winner <usuario>",
+      "description": "Announces the winner of a giveaway. Usage: !winner <user>"
+    }
+  ]
+}

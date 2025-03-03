@@ -1,0 +1,17 @@
+frases = [
+    "La vida es como una bicicleta, para mantener el equilibrio debes seguir adelante. - Albert Einstein",
+    "El éxito es la suma de pequeños esfuerzos repetidos día tras día. - Robert Collier",
+    "No importa lo lento que vayas, siempre y cuando no te detengas. - Confucio",
+    "La única manera de hacer un gran trabajo es amar lo que haces. - Steve Jobs",
+    "Si puedes soñarlo, puedes hacerlo. - Walt Disney",
+    "El fracaso es la oportunidad de comenzar de nuevo, pero de forma más inteligente. - Henry Ford",
+    "La creatividad es la inteligencia divirtiéndose. - Albert Einstein",
+    "La mejor manera de predecir el futuro es crearlo. - Peter Drucker",
+    "No te preocupes por los fracasos, preocúpate por las oportunidades que pierdes cuando ni siquiera lo intentas. - Jack Canfield",
+    "El único límite para nuestros logros es el que ponemos en nuestras mentes. - Napoleon Hill",
+    "La vida es 10% lo que te ocurre y 90% cómo reaccionas a ello. - Charles R. Swindoll",
+    "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. - Albert Schweitzer",
+    "Si quieres algo que nunca tuviste, debes hacer algo que nunca hiciste. - Anónimo",
+    "La persistencia es el camino al éxito. - Charles Chaplin",
+    "No te rindas, comienza ahora mismo y verás que cada día serás mejor. - Anónimo",
+]
