@@ -15,7 +15,7 @@ The bot features several things such as automated commercials, quotes, moderatio
 - ***And more!***
 
 ##  🤝 Contributing
-Contributions are welcome! Please read the CONTRIBUTING.md file for guidelines on how to contribute.
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
 See [requirements.txt](requirements.txt) before contribute.
 
 ## Support
