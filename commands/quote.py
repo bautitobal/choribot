@@ -3,10 +3,12 @@ import os
 import random
 from twitchio.ext import commands
 from utils.cooldown_messages import cooldown_messages
+from .cooldown import CooldownManager
 
 class QuoteCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        self.cooldown_manager = CooldownManager()
         self.quotes_file = "quotes.json"  # Archivo para almacenar las quotes
         self.quotes = self.load_quotes()  # Cargar las quotes al iniciar
 
