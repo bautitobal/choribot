@@ -22,5 +22,10 @@ paya_comments = [
     "Disfrutando lo votado y vos kukardo?",
     "No me gusta la politica pero hoy Murio Javier Milei por juntarse con la Patricia bullrich no me gusta nada de nada eso seria una Alemania Nazi por lejos asi mi Voto sera en Blanco y la verdad Massa tampoco no me gusta era solo eso nomas fin del comunicado .",
     "estube un ratito de niñero de mi hija de mi prima se iba re lejos sin decir nada estube siguiendo mal para que no se pierda se parece ami cuando no me gusta algo me voy a caminar por ahi xD",
-    "#NocheDeConfesiones la primera mujer es mi prima y ella me saco la virginidad xD"
+    "#NocheDeConfesiones la primera mujer es mi prima y ella me saco la virginidad xD",
+    "oy no se que paso con el Streaming no se fue strems labs o el Tiktok empezo a subir el aumento de procesador mal se me traba entero en directo asi por eso lo corte y asi mil disculpa gente como recompensa el domingo sera de FM24 🎮⚽🕹️",
+    "gorda y vieja a donde y sos hermosa marge :3",
+    "No Culpe a Karina o a la Quevedo no llenas tu Cancha 😂🤣",
+    "Siempre me pasa lo mismo me levanto temprano y no hay nadie en la casa 😤",
+    "amo sus oppais grandes :3"
 ]
