@@ -21,10 +21,12 @@ from commands.quote import QuoteCommands
 import logging
 from twitchio import HTTPException
 from twitchio.ext import commands
+from server import start_server
 
 logging.basicConfig(filename='logs/bot_errors.log', level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 load_dotenv()
+start_server()
 
 BOT_TOKEN = os.getenv('BOT_TOKEN') # Es el token de acceso del bot (no el de la API de Twitch, el Bearer token o OAuth token)
 REFRESH_TOKEN = os.getenv('REFRESH_TOKEN') # Es el token de refresco del bot, llamado refresh_token
