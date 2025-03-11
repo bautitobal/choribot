@@ -19,6 +19,11 @@ from commands.translation_commands import TranslationCommands
 from commands.commercial import CommercialCommands
 import asyncio
 from commands.quote import QuoteCommands
+import logging
+from twitchio import HTTPException
+from twitchio.ext import commands
+
+logging.basicConfig(filename='logs/bot_errors.log', level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 load_dotenv()
 
@@ -57,18 +62,45 @@ class Bot(commands.Bot):
 
     async def event_ready(self):
         print(f'Bot listo | Logueado como: {self.nick}')
-        connected_channels = [channel.name for channel in self.connected_channels]
-        print(f"Conectado a los canales: {', '.join(connected_channels)}")
         
-        # Iniciar los timers
-        self.timers = Timers(self) # Crear una instancia de la clase Timers
-        self.timers.start_timers() # Iniciar los timers
+        # Filtrar canales válidos
+        connected_channels = [channel for channel in self.connected_channels if channel is not None]
+        failed_channels = list(set(CHANNEL_NAMES) - set([channel.name for channel in connected_channels]))
+
+        print(f"Conectado a los canales: {', '.join([c.name for c in connected_channels]) if connected_channels else 'Ninguno'}")
         
-        # Iniciar el timer de publicidad automáticamente
+        if failed_channels:
+            print(f"[ERROR] No se pudo conectar a: {', '.join(failed_channels)}")
+            logging.error(f"No se pudo conectar a: {', '.join(failed_channels)}")
+
+        # Iniciar los timers solo con canales válidos
+        if connected_channels:
+            self.timers = Timers(self)
+            self.timers.start_timers()
+        
         commercial_cog = self.get_cog("CommercialCommands")
         if commercial_cog:
             asyncio.create_task(commercial_cog.start_commercial_timer())
 
+    async def event_error(self, error: Exception):
+        """Maneja los errores de TwitchIO, detectando si el bot fue baneado de un canal y registrándolo."""
+        if isinstance(error, HTTPException) and error.status == 403:
+            channel_name = None
+            if hasattr(error, 'request') and error.request:
+                match = re.search(r'channel_id=([^&]+)', str(error.request.url))
+                if match:
+                    channel_name = match.group(1)
+
+            message = "[ERROR] El bot ha sido baneado"
+            if channel_name:
+                message += f" del canal {channel_name}"
+
+            print(message)
+            logging.error(message)
+        else:
+            logging.error(f"Error inesperado: {error}")
+            print(f"[ERROR] {error}")
+     
     # --- LOGS ---
     def load_commands(self):
         """Cargar comandos adicionales."""
