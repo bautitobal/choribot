@@ -41,7 +41,7 @@ class Timers:
                 return
 
             await channel.send(message)
-            print(f"Mensaje enviado a {channel.name}: {message}")
+            #print(f"Mensaje enviado a {channel.name}: {message}") # Es solo para depuración
         except Exception as e:
             print(f"Error al enviar mensaje a {channel}: {e}")
 
