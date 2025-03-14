@@ -22,11 +22,13 @@ import logging
 from twitchio import HTTPException
 from twitchio.ext import commands
 from server import start_server
+from commands.dolar_api import DolarCommands
+from commands.cotizaciones_api import CotizacionesCommands
 
 logging.basicConfig(filename='logs/bot_errors.log', level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 load_dotenv()
-start_server()
+#start_server()
 
 BOT_TOKEN = os.getenv('BOT_TOKEN') # Es el token de acceso del bot (no el de la API de Twitch, el Bearer token o OAuth token)
 REFRESH_TOKEN = os.getenv('REFRESH_TOKEN') # Es el token de refresco del bot, llamado refresh_token
@@ -59,6 +61,8 @@ class Bot(commands.Bot):
         self.add_cog(TranslationCommands(self))
         self.add_cog(CommercialCommands(self))
         self.add_cog(QuoteCommands(self))
+        self.add_cog(DolarCommands(self))
+        self.add_cog(CotizacionesCommands(self))
         self.load_commands()
     
         #asyncio.create_task(self.get_cog("CommercialCommands").start_commercial_timer())    
