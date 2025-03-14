@@ -115,6 +115,16 @@
       "description": "Sends a hug to someone. Usage: !hug <user>"
     },
     {
+      "nombre": "!dolar",
+      "descripcion": "Muestra el precio del dólar en Argentina. Uso: !dolar",
+      "description": "Shows the dollar price in Argentina. Usage: !dolar"
+    },
+    {
+      "nombre": "!cotizacion",
+      "descripcion": "Muestra la cotización de una moneda. Uso: !cotizacion <país>. Países disponibles: argentina, brasil, chile, uruguay, méxico",
+      "description": "Shows the exchange rate of a currency. Usage: !cotizacion <country>. Available countries: argentina, brasil, chile, uruguay, méxico"
+    },
+    {
       "nombre": "!libra",
       "descripcion": "Muestra informacion sobre $LIBRA.",
       "description": "Shows information about $LIBRA."
